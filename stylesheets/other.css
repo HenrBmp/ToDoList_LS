@@ -1,0 +1,17 @@
+#newTask {
+    padding-inline: 1.5rem;
+}
+
+#TaskList {
+    background: var(--neutral-light);
+    border-radius: var(--b-radius);
+    margin-inline: 1.5rem;
+}
+
+textarea {
+    resize: none;
+    border-radius: calc(var(--b-radius)/2);
+    border: none;
+    background: var(--neutral-light);
+    height: auto;
+}

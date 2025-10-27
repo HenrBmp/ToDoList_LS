@@ -1,0 +1,26 @@
+body {
+    min-height: 100dvh;
+    display: grid;
+    grid-template: auto 1fr 10dvh / 1fr;
+}
+
+header#header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+    padding: 1rem;
+}
+
+#main {
+    display: grid;
+    grid-template: 25% 75% / 1fr;
+}
+
+footer#footer {
+    display: flex;
+    flex: column;
+    justify-content: center;
+    align-items: center;
+}
