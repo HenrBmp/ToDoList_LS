@@ -1,6 +1,4 @@
 #newTask {
-    margin-inline: 1.5rem;
-    padding: 1rem;
     background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
 
     color: var(--neutral-light);
@@ -8,7 +6,7 @@
 
 #TaskList {
     background: var(--color-mode-primary);
-    margin-inline: 1.5rem;
+    color: var(--neutral-dark-2);
 }
 
 #TaskDescription {

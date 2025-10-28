@@ -18,20 +18,21 @@
     </header>
 
     <main id="main">
-        <section id="newTask" class="b-radius">
+        <section id="newTask" class="b-radius section-space">
             <h1 class="head-font">
-                Qual nova tarefa deseja criar?
+                Qual tarefa deseja criar?
             </h1>
             <div>
                 <input type="text" id="TaskDescription" class="body-font half-b-radius none-bord input-text-params">
                 <label for="TaskDate">Data de validade: <input type="date" name="Task Date Insert" id="TaskDateInsert" class="none-bord"></label>
-                <input type="button" value="Limpar" class="b-radius">
-                <input type="button" value="Criar" class="b-radius">
+                <div>
+                    <input type="button" value="Limpar" class="b-radius">
+                    <input type="button" value="Criar" class="b-radius">
+                </div>
             </div>
         </section>
 
-        <section id="TaskList" class="b-radius">
-
+        <section id="TaskList" class="b-radius section-space">
         </section>
     </main>
 
@@ -39,8 +40,10 @@
         <p>
             &copy;Henrique Rodrigues
         </p>
+        <input type="button" value="Clique aqui para redefinir seu nome" id="resetName" class="none-bord" style="background: none; color: var(--neutral-light)">
     </footer>
     <script src="scripts/LoadTasks.js"></script>
+    <script src="scripts/BasicButton.js"></script>
     <script src="scripts/FirstEnter.js"></script>
 </body>
 </html>
