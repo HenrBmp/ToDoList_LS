@@ -2,30 +2,35 @@
 <html lang="pt-br">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" href="stylesheets/layout.css">
-    <link rel="stylesheet" href="stylesheets/other.css">
+    <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/layout.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/other.css" type="text/css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>To Do List</title>
 </head>
 <body class="darken-bg body-font">
     <header id="header">
         <p>
-            Olá <span id="name-place">Placeholder</span>!
+            Olá <span id="name-place" class="emphasis">Placeholder</span>!
         </p>
 
         <button>DarkModeB</button>
     </header>
 
     <main id="main">
-        <section id="newTask">
-            <h2 class="head-font">
+        <section id="newTask" class="b-radius">
+            <h1 class="head-font">
                 Qual nova tarefa deseja criar?
-            </h2>
-            <textarea name="" id=""></textarea>
+            </h1>
+            <div>
+                <input type="text" id="TaskDescription" class="body-font half-b-radius none-bord input-text-params">
+                <label for="TaskDate">Data de validade: <input type="date" name="Task Date Insert" id="TaskDateInsert" class="none-bord"></label>
+                <input type="button" value="Limpar" class="b-radius">
+                <input type="button" value="Criar" class="b-radius">
+            </div>
         </section>
 
-        <section id="TaskList">
+        <section id="TaskList" class="b-radius">
 
         </section>
     </main>
@@ -36,5 +41,6 @@
         </p>
     </footer>
     <script src="scripts/LoadTasks.js"></script>
+    <script src="scripts/FirstEnter.js"></script>
 </body>
 </html>

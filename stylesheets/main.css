@@ -11,6 +11,9 @@
             --primary-light: #69bd5c;
             --primary-mid: #457a3c;
             --primary-dark: #324e2d;
+        /* SWTICH COLOR MODE */
+            --color-mode-bg: var(--neutral-dark-1);
+            --color-mode-primary: var(--neutral-light);
 
     /* PROPERTIES */
         --b-radius: 1rem;
@@ -24,13 +27,16 @@
 *::before {
     box-sizing: border-box;
     margin: 0;
+    font-family: inherit;
 }
 
 /* UTILITY CLASS */
 
 .head-font {
     font-family: Outfit, sans-serif;
-    font-weight: normal;
+    font-weight: 600;
+    line-height: .95em;
+    margin-block: .5em;
 }
 
 .body-font {
@@ -39,6 +45,29 @@
 }
 
 .darken-bg {
-    background: var(--neutral-dark-1);
-    color: var(--neutral-light);
+    background: var(--color-mode-bg);
+    color: var(--color-mode-primary);
+}
+
+.b-radius {
+    border-radius: var(--b-radius);
+}
+
+.half-b-radius {
+    border-radius: calc(var(--b-radius) / 2);
+}
+
+.emphasis {
+    font-weight: bold;
+    color: var(--primary-light);
+}
+
+.none-bord {
+    border: none;
+    outline: none;
+}
+
+.input-text-params {
+    height: 1.5rem;
+    padding: .1rem .5rem;
 }
