@@ -19,7 +19,7 @@
         --b-radius: 1rem;
 
         --ease-in-out: cubic-bezier(.5,0,.5,1);
-        --elastic-bezier: cubic-bezier(.75,-0.5,.25,1.5);
+        --elastic-bezier: cubic-bezier(1.00, -0.65, 0.00, 1.5);
 }
 
 *,

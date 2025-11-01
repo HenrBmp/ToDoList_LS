@@ -7,6 +7,10 @@
 #TaskList {
     background: var(--color-mode-primary);
     color: var(--neutral-dark-2);
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 #TaskDescription {
@@ -35,7 +39,7 @@
     border: 2px solid var(--neutral-dark-2);
     background: var(--neutral-light);
 
-    font-size: inherit;
+    font-size: .9rem;
     padding: 0.1rem 0.5rem;
     width: fit-content;
     display: block;
@@ -84,4 +88,73 @@
     height: auto;
     padding: 25px;
     font-size: 20px;
+}
+
+/* ITEM TAREFA */
+
+.TaskItem {
+    background: var(--neutral-dark-1);
+    color: var(--neutral-light);
+
+    padding-block: .5rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 1rem;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TaskItem div {
+    display: inline-flex;
+    align-items: center;
+}
+
+.TaskItem,
+.TaskItem div{
+    gap: 1rem;
+}
+
+.overdueTask::before {
+    content: "!";
+    font-family: Outfit;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    background: red;
+
+    height: 100%;
+    width: 1.5rem;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    left: -.1rem;
+
+    border-start-start-radius: var(--b-radius);
+    border-bottom-left-radius: var(--b-radius);
+}
+
+.overdueTask .dataVal {
+    text-decoration: underline red 2px;
+}
+
+.TaskItem svg {
+    transition: all .5s var(--elastic-bezier);
+}
+
+.TaskItem svg:hover {
+    rotate: 180deg;
+    fill: red;
+    scale: 1.25;
+}
+
+.taskTitle {
+    overflow-wrap: anywhere;
 }

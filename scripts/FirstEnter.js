@@ -33,11 +33,11 @@ if (localStorage.getItem("username")) {
     send.addEventListener("click", () => {
         const nome = document.querySelector(".pop-up input[type='text']").value;
         if (nome) {
-            localStorage.setItem("username", document.querySelector(".pop-up input[type='text']").value);
+            localStorage.setItem("username", nome);
             placeUser.innerHTML = nome;
             document.body.removeChild(blur);
         } else {
             alert("O nome inserido é invalido");
         }
-    })
+    });
 }

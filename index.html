@@ -18,7 +18,7 @@
     </header>
 
     <main id="main">
-        <section id="newTask" class="b-radius section-space">
+        <section name="Seção de adição de tarefas" id="newTask" class="b-radius section-space">
             <h1 class="head-font">
                 Qual tarefa deseja criar?
             </h1>
@@ -32,7 +32,14 @@
             </div>
         </section>
 
-        <section id="TaskList" class="b-radius section-space">
+        <section name="Lista de tarefas" id="TaskList" class="b-radius section-space">
+            <div id="1761879600000" class="TaskItem b-radius overdueTask">
+                <p class="taskTitle body-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tenetur, maxime aperiam illo a sapiente, iure asperiores similique repellendus natus neque nam soluta magnam numquam sed ratione nihil, praesentium eligendi.</p>
+                <div>
+                    <span class="dataVal">31/10/2025</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -43,6 +50,7 @@
         <input type="button" value="Clique aqui para redefinir seu nome" id="resetName" class="none-bord" style="background: none; color: var(--neutral-light)">
     </footer>
     <script src="scripts/LoadTasks.js"></script>
+    <script src="scripts/CreateTask.js"></script>
     <script src="scripts/BasicButton.js"></script>
     <script src="scripts/FirstEnter.js"></script>
 </body>
